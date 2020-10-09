@@ -7,7 +7,7 @@ LOCAL_SHARED_LIBRARIES := liblog libcutils libdl libxml2 libbase libutils androi
 LOCAL_SHARED_LIBRARIES += libhidlbase libhidltransport vendor.xiaomi.hardware.touchfeature@1.0
 LOCAL_HEADER_LIBRARIES += libutils_headers
 LOCAL_HEADER_LIBRARIES += libhardware_headers
-LOCAL_SRC_FILES := power-common.c metadata-parser.c utils.c list.c hint-data.c powerhintparser.c Power.cpp main.cpp
+LOCAL_SRC_FILES := power-common.c metadata-parser.c utils.c list.c hint-data.c powerhintparser.c Power.cpp main.cpp power-6150.c
 LOCAL_C_INCLUDES := external/libxml2/include \
                     external/icu/icu4c/source/common
 
