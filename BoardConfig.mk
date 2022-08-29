@@ -149,7 +149,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 TARGET_SEPOLICY_DIR := msmsteppe
--include device/qcom/sepolicy_vndr/SEPolicy.mk
+-include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2022-07-01
