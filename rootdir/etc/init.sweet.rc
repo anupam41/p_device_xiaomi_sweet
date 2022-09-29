@@ -41,5 +41,16 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     group nfc
     disabled
 
-on boot && property:ro.boot.product.hardware.sku=nfc
+on init && property:ro.boot.hwc=GLOBAL
     enable vendor.nfc_hal_service
+
+on property:ro.boot.hwc=INDIA
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.ese.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.hcef.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.hce.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.uicc.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.xml bind
+    mount none /dev/null /vendor/etc/permissions/com.android.nfc_extras.xml bind
+    mount none /dev/null /vendor/etc/permissions/com.nxp.mifare.xml bind
+
+    mount none /vendor/etc/vintf/manifest/manifest_empty.xml /vendor/etc/vintf/manifest/manifest_nfc.xml bind
