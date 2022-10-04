@@ -283,19 +283,6 @@ PRODUCT_PACKAGES += \
     TelephonyResSweet \
     WifiResSweet
 
-# Perf
-PRODUCT_PACKAGES += \
-    libqti-perfd-client
-
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service.sweet-libperfmgr \
-    android.hardware.power@1.2.vendor
-
-PRODUCT_SOONG_NAMESPACES += \
-    hardware/google/interfaces \
-    hardware/google/pixel
-
 # Properties
 include $(LOCAL_PATH)/properties.mk
 
