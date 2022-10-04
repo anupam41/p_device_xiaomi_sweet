@@ -283,6 +283,13 @@ PRODUCT_PACKAGES += \
     TelephonyResSweet \
     WifiResSweet
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2.vendor \
+    android.hardware.power-service
+
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/power/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+
 # Properties
 include $(LOCAL_PATH)/properties.mk
 
