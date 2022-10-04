@@ -376,3 +376,7 @@ persist.debug.wfd.enable=1 \
 # Zygote
 PRODUCT_PROPERTY_OVERRIDES += \
 zygote.critical_window.minute=10
+
+# system_ext
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.vendor.recovery_update=false
