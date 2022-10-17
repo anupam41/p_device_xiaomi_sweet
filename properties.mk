@@ -377,6 +377,14 @@ persist.debug.wfd.enable=1 \
 PRODUCT_PROPERTY_OVERRIDES += \
 zygote.critical_window.minute=10
 
-# system_ext
+## system_ext ##
+
+# Updater
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.recovery_update=false
+
+## vendor ##
+
+# Perf
+PRODUCT_VENDOR_PROPERTIES += \
+ro.vendor.extension_library=libqti-perfd-client.so
