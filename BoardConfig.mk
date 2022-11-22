@@ -79,8 +79,7 @@ KERNEL_LD := LD=ld.lld
 
 # Manifest
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(DEVICE_PATH)/manifests/device_framework_matrix.xml \
-    $(DEVICE_PATH)/manifests/lineage_device_framework_matrix.xml
+    $(DEVICE_PATH)/manifests/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifests/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/manifests/compatibility_matrix.xml
 ODM_MANIFEST_SKUS := nfc
